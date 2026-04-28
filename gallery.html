@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Community Gallery</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h2>Tech Community</h2>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./form.html">Join Us</a></li>
+        <li><a href="./gallery.html">Multimedia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Multimedia Gallery</h1>
+
+      <h2>Community Image</h2>
+      <img id="communityImage" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Tech Community" class="gallery-img">
+      <br>
+      <button class="btn" onclick="changeImage()">Change Image</button>
+
+    <h2>Community Video</h2>
+    <div class="video-box">
+        <iframe 
+            src="https://www.youtube.com/embed/MNi0lCIYJN8"
+            title="IT Career Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+         </iframe>
+    </div>
+
+      <audio id="communityAudio" controls>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+</audio>
+      <br>
+      <button class="btn" onclick="playAudio()">Play Audio</button>
+      <button class="btn secondary" onclick="pauseAudio()">Pause Audio</button>
+      <button class="btn secondary" onclick="showInfo()">Show Info</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tech Community</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
